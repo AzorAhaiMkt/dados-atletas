@@ -30,7 +30,7 @@ class Atleta {
         let notasOrdenadas = this.notasAtleta.sort((b, a) => a - b);
         let notasValidas = notasOrdenadas.slice(1,4);
         let somaNotasValidas = notasValidas.reduce(function(total, atual){
-            return total+=atual
+            return total+=atual;
         }, 0);
         this.mediaValida = somaNotasValidas/notasValidas.length;
     }
